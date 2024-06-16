@@ -1,0 +1,32 @@
+:root {
+	box-sizing: border-box;
+	--ff-main: "Rubik", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+}
+
+input, 
+textarea, 
+button {
+	font-family: inherit;
+}
+
+.body {
+	font-family: var(--ff-main);
+	display: grid;
+	align-content: center;
+	margin: 0;
+	min-height: 100svh;
+	scrollbar-gutter: stable;
+}
