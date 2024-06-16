@@ -2,50 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Chat app CSS illustration</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+	<main> 
+		<header>
+			<button type="button">Back</button>
+			<img src="./assets/images/avatar.jpg" alt="Samuel Green avatar">
+			<h1>Samuel Green</h1>
+			<p>Available to Walk</p>
+			<button type="button">Options</button>
+		</header>
+		<p>That sounds great. I'd be happy with that.</p>
+		<p>Could you send over some pictures of your dog, please?</p>
+		<div>
+			<div>
+				<img src="./assets/images/dog-image-1.jpg" alt="">
+				<img src="./assets/images/dog-image-2.jpg" alt="">
+				<img src="./assets/images/dog-image-3.jpg" alt="">
+			</div>
+			<p>Here are a few pictures. She's a happy girl!</p>
+			<p>Can you make it?</p>
+		</div>
+		<div>
+			<p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+			<label for="30min">
+				<input type="radio" id="30min" name="walk" value="29"/>
+				<span>30 minute walk</span>
+				<b>$29</b>
+			</label>
+			<label for="60min">
+				<input type="radio" id="60min" name="walk" value="29"/>
+				<span>1 hour walk</span>
+				<b>$49</b>
+			</label>
+		</div>
+		<form method="post">
+			<textarea id="message" name="message">Type a message…</textarea>
+			<button type="button">Send message</button>
+		</form>
+	</main>
+	<section>
+		<h1>Simple booking</h1>
+		<p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+	</section>  
+  <footer class="signature">
+		<p>
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://www.linkedin.com/in/fernandofalcon/" target="_blank">Fer Falcon</a>.
+		</p>
+	</footer>
 </body>
 </html>
